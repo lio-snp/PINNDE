@@ -1,0 +1,72 @@
+{
+  "checkpoint": "checkpoints/pinnde_v7_model.pt",
+  "metadata": {
+    "model_config": {
+      "hidden_dim": 128,
+      "num_hidden": 4,
+      "num_bands": 4
+    },
+    "stage": "tail-weighted",
+    "extra": {
+      "source_checkpoint": "checkpoints/pinnde_v6_model.pt"
+    }
+  },
+  "per_xi": [
+    {
+      "xi": 0.1,
+      "l2_error": 0.043154769647154465,
+      "max_error": 0.07318013354154934,
+      "mean_abs_error": 0.036522323263864946
+    },
+    {
+      "xi": 0.2,
+      "l2_error": 0.013391264222637535,
+      "max_error": 0.023574789556422546,
+      "mean_abs_error": 0.011357408518303615
+    },
+    {
+      "xi": 0.3,
+      "l2_error": 0.005542634495015745,
+      "max_error": 0.013035276006174821,
+      "mean_abs_error": 0.004513643489671639
+    },
+    {
+      "xi": 0.4,
+      "l2_error": 0.009398615353184217,
+      "max_error": 0.019662989056013366,
+      "mean_abs_error": 0.007831749905475584
+    }
+  ],
+  "summary": {
+    "mean_l2_error": 0.01787182092949799,
+    "worst_l2_error": 0.043154769647154465,
+    "mean_max_error": 0.03236329704004002,
+    "worst_max_error": 0.07318013354154934
+  },
+  "initial_conditions": [
+    {
+      "xi": 0.1,
+      "x0_pred": 0.6991926431655884,
+      "v0_pred": 1.1982206106185913
+    },
+    {
+      "xi": 0.2,
+      "x0_pred": 0.7002182602882385,
+      "v0_pred": 1.1994060277938843
+    },
+    {
+      "xi": 0.3,
+      "x0_pred": 0.6998820900917053,
+      "v0_pred": 1.1994717121124268
+    },
+    {
+      "xi": 0.4,
+      "x0_pred": 0.6987390518188477,
+      "v0_pred": 1.19919753074646
+    }
+  ],
+  "residual_summary": {
+    "mean_abs_residual": 0.0049271974712610245,
+    "max_abs_residual": 0.03344982862472534
+  }
+}

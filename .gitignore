@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local experiment outputs
+results/full_run/
+results/refined/
+results/refined_tail_v1/
